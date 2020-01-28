@@ -1,0 +1,70 @@
+<section id="erp">
+	    <article>
+	        <header>
+	            <h2>ERP COMPLETA PARA A ÁREA DE SAÚDE.</h2>
+	        </header>
+	        <p>É o único ERP do mercado capaz de atender a <br>
+				empresas de diferentes tamanhos e segmentos<br>
+				com a mesma eficiência. Automatiza processos-chave<br>
+				 e integra todas as áreas do seu negócio.</p>
+				 <p><button>SAIBA MAIS</button></button></p>
+	    </article>
+	</section>
+	<section id="torneWeber">
+	    <article>
+	        <header>
+	            <h2>TORNE-SE UM WEBER AGOA MESMO!</h2>
+	        </header>
+	        <p>É o único ERP do mercado capaz de atender a <br>
+				empresas de diferentes tamanhos e segmentos<br>
+				com a mesma eficiência. Automatiza processos-chave<br>
+				 e integra todas as áreas do seu negócio.</p>
+				 <p><button>SAIBA MAIS</button></button></p>
+	    </article>
+	</section>
+ 	<section id="torneWeber">
+	    <article>
+	        <header>
+	            <h2>OTIMIZE O SEU FATURAMENTO!</h2>
+	        </header>
+	        <p>Otimize o seu faturamento e disponha de relatórios em tempo real para a tomada de decisões</p>
+	        <p><button>SAIBA MAIS</button></button></p>
+	    </article>
+	</section>
+	<section>
+	    <article>
+	        <header>
+	            <h2>SE VOCÊ BUSCA RSULTADOS EXCELENTES, ESTÁ NO LUGAR CERTO.</h2>
+	        </header>
+	        <p>Nosso sistma funciona tanto em desktop quanto web, com a mesma eficácia.</p>
+	        <p><button>SAIBA MAIS</button></button></p>
+	    </article>
+	</section>
+	<section id="formWeber">
+	    <form name="formSejaWeber">
+	        <h1>Entre em contato</h1>
+	        <p class="nome">
+	            <input type="text" id="nomeid" placeholder="Nome e Sobrenome" required="required" name="nome" />
+	            <label for="nome">Nome Completo</label>
+	        </p>
+	        <p class="nomeEmpresa">
+	            <input type="text" id="foneid" placeholder="Nome da sua empresa" name="nomeEmpresa" />
+	            <label for="nomeEmpresa">Nome da Sua Empresa</label>	 
+	        </p>
+	        <p>
+	            <input type="email" id="emailid" placeholder="exemplo@mail.com" name="email" />
+	            <label for="email">E-mail</label>
+	        </p>
+	        <p>
+	            <input type="fone" id="telefoneid" placeholder="(xx) xxxxx - xxxx" name="telefone" />
+	            <label for="telefone">Telefone</label>
+	        </p>
+	        <p>
+	            <textarea id="taNecessidade" placeholder="Descreva a sua necessidade" name="necessidade"></textarea>
+	            <label for="necessidade">Informe a sua necessidade</label>
+	        </p>
+	        <p class="submit">
+	            <input type="submit" onclick="Enviar();" value="Enviar" />
+	        </p>
+    	</form>
+	</section>

@@ -1,0 +1,39 @@
+/*
+* AlturaMenu
+*/
+.header{ height: 150px;}
+
+
+.session { text-align: center; }
+
+/*
+* Navigation
+*/
+.f-nav{ z-index: 9999; position: fixed; top: 0; width: 100%;} /* deixa o menu flutuando no topo */
+
+.nav { height: 3.8em;}
+.nav ul {margin-left: 25%}
+.nav ul { list-style: none; }
+.nav ul li{float: left; margin-top: 0.6em; padding: 6px; border-right: 1px solid #ACACAC;}
+.nav ul li:first-child{ padding-left: 0;}
+.nav ul li a { text-decoration: none; color: white }
+.nav ul li a:hover{background: white; color:black; padding: 2em 2em 2em 2em}
+
+
+/* Código HTML */
+
+<nav>
+				<div class="nav-container">
+					<div class="nav">
+						<div class="logoRGA"><a href="http://www.gasoftware.com.br" target="_blank"><img src="images/logotitle.png"></a></div>
+						<ul>
+							<li><a href="#">Conheça-nos</a></li>
+							<li><a href="#">Resultados</a></li>
+							<li><a href="#">Seu Faturamento</a></li>
+							<li><a href="#">Seja Web !</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div> 
+			</nav>
