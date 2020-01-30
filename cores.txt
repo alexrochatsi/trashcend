@@ -1,0 +1,7 @@
+#00A859 - Verde Escuro
+
+#63BE74 - Verde Claro
+
+#96989A - Cinza Escuro
+
+#BDBFC1 - Cinza Claro
