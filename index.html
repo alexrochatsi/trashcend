@@ -4,16 +4,15 @@
         <title>Trashcend</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/util.js"></script>
-        <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg static-top" style="color: #00A859;">
+        <nav class="navbar navbar-expand-lg bg-light static-top w-100" style="color: #00A859; position: fixed; z-index: 100">
           <div class="container">
             <a class="navbar-brand" href="#">
                   <img src="images/logo.png" alt="Logo marca Trashcend" width="30%">
@@ -23,24 +22,32 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" style="text-decoration: none;color: #00A859; font-weight: bold" href="#">Início</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="text-decoration: none;color: #00A859; font-weight: bold" href="#">Timeline</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="text-decoration: none;color: #00A859; font-weight: bold" href="#">Galeria</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="text-decoration: none;color: #00A859; font-weight: bold" href="#">Contato</a>
-                </li>
+                <div class="inicio">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="text-decoration: none; font-weight: bold" href="#">INÍCIO</a>
+                    </li>
+                </div>
+                  <div class="timelinem">
+                    <li class="nav-item">
+                      <a class="nav-link" style="text-decoration: none;font-weight: bold" href="#timeline">TIMELINE</a>
+                    </li>
+                  </div>
+                  <div class="galeria">
+                    <li class="nav-item">
+                      <a class="nav-link" style="text-decoration: none; font-weight: bold" href="#galeria">GALERIA</a>
+                    </li>
+                  </div>
+                  <div class="contato">
+                    <li class="nav-item">
+                      <a class="nav-link" style="text-decoration: none; font-weight: bold" href="#">CONTATO</a>
+                    </li>
+                  </div>
               </ul>
             </div>
           </div>
         </nav>
-        <div class="container">
-            <h1 style="text-align: center; padding-top: 5%; color: #00A859; font-family: sans-serif; font-weight: bold">Como se deu o projeto</h1>
+        <div class="container" id="timeline">
+            <h1 style="text-align: center; padding-top: 10%; color: #00A859; font-family: sans-serif; font-weight: bold">Como se deu o projeto</h1>
             <hr style="margin: 5% 0">
             <div class="row">
                 <div class="col-md-12">
@@ -98,50 +105,79 @@
                     </div>
                 </div>
             </div>    
-            <hr style="margin: 5% 0">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                    <h1 style="text-align: center; padding-bottom: 5%; color: #00A859; font-family: sans-serif; font-weight: bold">Galeria</h1>
-                    
-                    <div id="carousel1" class="carousel slide align-self-center w-75" data-ride="carousel" style="margin: 0 auto;">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel1" data-slide-to="1"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img class="w-100" src="images/img01.jpg" alt="Primeiro Slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Cooperativa Recicla Conquista</h5>
-                                <p>Vistia à cooperativa para levantamento de informações sobre a coleta em Vitória da Conquista.</p>
+            <div class="container" id="galeria">
+                <hr style="margin: 5% 0">
+                <div class="row">
+                    <div class="col-md-12">
+                            <h1 style="text-align: center; padding-bottom: 5%; color: #00A859; font-family: sans-serif; font-weight: bold">Galeria</h1>
+
+                            <div id="carousel1" class="carousel slide align-self-center w-75" data-ride="carousel" style="margin: 0 auto;">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1" data-slide-to="1"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="w-100" src="images/img01.jpg" alt="Primeiro Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Cooperativa Recicla Conquista</h5>
+                                        <p>Visita à cooperativa para levantamento de informações sobre a coleta em Vitória da Conquista.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="w-100" src="images/img02.jpg" alt="Segundo Slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Cooperativa Recicla Conquista</h5>
+                                        <p>Visita à cooperativa para levantamento de informações sobre a coleta em Vitória da Conquista.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                              </a>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                          <img class="w-100" src="images/img02.jpg" alt="Segundo Slide">
-                            <h5>Cooperativa Recicla Conquista</h5>
-                            <p>Vistia à cooperativa para levantamento de informações sobre a coleta em Vitória da Conquista.</p>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Próximo</span>
-                      </a>
                     </div>
-                </div>
             </div>
+            <!-- Contato -->
+            
+            <h1 style="text-align: center; padding: 5% 0; color: #00A859; font-family: sans-serif; font-weight: bold">Contato</h1>
+              <div class="container my-4">
+                <div class="row text-center">
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-4">
+                    <img class="rounded-circle" alt="100x100" src="images/alex.JPG "
+                      data-holder-rendered="true">
+                      <h2 class="my-3 h2">Alex Rocha</h2>
+                      <p>Estudante de Cinema (UESB) / Design Gráfico e Programador</p>
+                      <p><strong>E-mail</strong> alexrochatsi@gmail.com</p>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <img class="rounded-circle z-depth-2" alt="100x100" src="images/paloma.jpg"
+                      data-holder-rendered="true">
+                      <h2 class="my-3 h2">Paloma Passos</h2>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <img class="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+                      data-holder-rendered="true">
+                      <h2 class="my-3 h2">Renata Ribeiro</h2>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <img class="rounded-circle z-depth-2" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(33).jpg"
+                      data-holder-rendered="true">
+                      <h2 class="my-3 h2">Vinícius Amaral</h2>
+                  </div>
+                </div>
+              </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small w-100" style="background: #00A859; color: white">
+              <div class="footer-copyright text-center py-3">© 2020 Copyright: <strong>Trashcend | MIT</strong></div>
+            </footer>
         </div>
-        <!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/bootstrap.bundle.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
     </body>
 </html>
